@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+
+    /* Earthy jute palette */
+    /* Dark olive green: #3F4C2E ~ oklch(0.32 0.06 130) */
+    --olive-dark: 0.32 0.06 130;
+    /* Warm cream: #F6EEDB ~ oklch(0.94 0.03 85) */
+    --cream: 0.94 0.03 85;
+    /* Beige/tan: #E9D9BF ~ oklch(0.88 0.04 85) */
+    --beige: 0.88 0.04 85;
+    /* Button brown: #8B6A4B ~ oklch(0.52 0.07 55) */
+    --brown: 0.52 0.07 55;
+    /* Border: #D8D0C2 ~ oklch(0.84 0.02 80) */
+    --border-color: 0.84 0.02 80;
+
+    --background: 0.94 0.03 85;
+    --foreground: 0.15 0.01 50;
+    --card: 1 0 0;
+    --card-foreground: 0.15 0.01 50;
+    --popover: 1 0 0;
+    --popover-foreground: 0.15 0.01 50;
+    --primary: 0.32 0.06 130;
+    --primary-foreground: 0.98 0 0;
+    --secondary: 0.88 0.04 85;
+    --secondary-foreground: 0.32 0.06 130;
+    --muted: 0.88 0.04 85;
+    --muted-foreground: 0.45 0.02 60;
+    --accent: 0.52 0.07 55;
+    --accent-foreground: 0.98 0 0;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.84 0.02 80;
+    --input: 0.84 0.02 80;
+    --ring: 0.52 0.07 55;
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.985 0 0;
+    --sidebar-foreground: 0.145 0 0;
+    --sidebar-primary: 0.205 0 0;
+    --sidebar-primary-foreground: 0.985 0 0;
+    --sidebar-accent: 0.97 0 0;
+    --sidebar-accent-foreground: 0.205 0 0;
+    --sidebar-border: 0.922 0 0;
+    --sidebar-ring: 0.708 0 0;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Poppins", sans-serif;
+  }
+}
